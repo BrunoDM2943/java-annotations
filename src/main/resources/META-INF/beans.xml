@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       bean-discovery-mode="all">
+    <scan>
+        <exclude name="org.**" />
+        <exclude name="groovy.**" />
+        <exclude name="groovyjarjarasm.**" />
+        <exclude name="javax.xml.**" />
+        <exclude name="javassist.**" />
+        <exclude name="net.**" />
+        <exclude name="javax.**" />
+    </scan>
+
+
+    <interceptors>
+        <class>com.github.brunodm2934.java.annotations.logger.LogInterceptor</class>
+    </interceptors>
+</beans>
